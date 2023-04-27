@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BlackjackProject
+﻿public class Dealer : Player
 {
-    internal class Dealer
+    public Dealer() : base("Dealer")
     {
+    }
+
+    public bool ShouldHit()
+    {
+        // Dealer hits if hand value is less than 17
+        return GetHandValue() < 17;
     }
 }

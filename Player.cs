@@ -1,12 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// This class represents a player in the game.
+using System;
 
-namespace BlackjackProject
+public class Player
 {
-    internal class Player
+    public string Name { get; set; }
+    public Hand Hand { get; }
+
+    public Player(string name)
     {
+        Name = name;
+        Hand = new
+Hand();
+    }
+public void AddCardToHand(Card card)
+    {
+        Hand.AddCard(card);
+    }
+
+    public int GetHandValue()
+    {
+        return Hand.GetHandValue();
+    }
+
+    public void ClearHand()
+    {
+        Hand.Clear();
     }
 }
