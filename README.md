@@ -1,3 +1,3 @@
 # Blackjack Project
 
-Hello and welcome to my C# Blackjack program.
+Hello! and welcome to my C# Blackjack program.
