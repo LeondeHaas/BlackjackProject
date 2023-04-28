@@ -2,20 +2,11 @@
 
 class Program
 {
-    class PlayAgain
-    {
-        public string PlayAgainInput { get; private set; }
-
-        public void AskToPlayAgain()
-        {
-            Console.WriteLine("Do you want to play again? (yes/no)");
-            PlayAgainInput = Console.ReadLine();
-        }
-    }
 
     static void Main(string[] args)
     {
         Console.WriteLine("Welcome to Blackjack!");
+        Console.WriteLine("A small tut");
 
         // Create a new deck and shuffle it
         Deck deck = new Deck();
